@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.1.33:3306/networkpublicopinionmap</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class="com.om.domain.DataSource" />
+        <mapping class="com.om.domain.Writer" />
+        <mapping class="com.om.domain.Comment" />
+        <mapping class="com.om.domain.DataEvent" />
+        <mapping class="com.om.domain.Event" />     
+        <mapping class="com.om.domain.WriterFactor" />
+        <mapping class="com.om.domain.EventFactor" />
+        <mapping class="com.om.domain.EventPeople" />
+        <mapping class="com.om.domain.EventSpread" />
+        <mapping class="com.om.domain.EventType" />
+        <mapping class="com.om.domain.Theme" />
+        <mapping class="com.om.domain.ThemeIdea" />
+    </session-factory>
+</hibernate-configuration>
